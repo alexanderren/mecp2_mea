@@ -1,5 +1,7 @@
 # Steps for initial MEA analysis
 
+The code used here was created by Timothy Sit, and was edited to work on computers with 8GB of RAM or possibly less. These scripts will run electrode-by-electrode rather than going over all electrodes at the same time. For the original scripts, go to [Tim's GitHub](https://github.com/Timothysit).
+
 ### Procedure for Spike Detection
 1. Use MC_DataTool to initially convert `.mcd` files into `.raw` format.
 2. Run `MEA_batchConvert.m` in the folder containing the `.raw` file to create `.mat` files for each electrode (make sure the script calls `MEA_load_bin_original_preallocate.m` so that it converts electrode-by-electrode).
